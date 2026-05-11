@@ -1,0 +1,13 @@
+node_modules
+node_modules.broken-20260509
+dist
+src-tauri/target
+.cargo
+.claude
+.playwright-mcp
+vite-*.log
+.env
+.env.local
+*.sqlite
+*.log
+D/

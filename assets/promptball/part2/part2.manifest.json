@@ -1,0 +1,170 @@
+{
+  "id": "promptball-part2-workbench",
+  "name": "Part 2 - 主工作台模块",
+  "source": {
+    "image": "ui/part2.png",
+    "width": 1448,
+    "height": 1086
+  },
+  "tokens": {
+    "primary": "#2563EB",
+    "primaryHover": "#1D4ED8",
+    "primarySoft": "#E6F0FF",
+    "success": "#16A34A",
+    "successSoft": "#DCFCE7",
+    "warning": "#F59E0B",
+    "warningSoft": "#FFF7ED",
+    "danger": "#EF4444",
+    "dangerSoft": "#FEF2F2",
+    "surface": "#FFFFFF",
+    "background": "#F8FAFC",
+    "border": "#E5E7EB",
+    "borderStrong": "#CBD5E1",
+    "textPrimary": "#111827",
+    "textSecondary": "#64748B",
+    "textMuted": "#94A3B8",
+    "radiusCard": 12,
+    "radiusControl": 8,
+    "shadowCard": "0 2px 8px rgba(16, 24, 40, 0.06)"
+  },
+  "regions": [
+    {
+      "id": "page-title",
+      "label": "页面标题",
+      "bounds": { "x": 24, "y": 25, "width": 420, "height": 112 },
+      "text": ["PromptBall 桌面端", "Part 2 · 主工作台模块", "可复用组件与设计资产"]
+    },
+    {
+      "id": "app-header",
+      "label": "1. 应用头部（App Header）",
+      "bounds": { "x": 24, "y": 184, "width": 510, "height": 66 },
+      "children": [
+        { "id": "traffic-red", "bounds": { "x": 39, "y": 207, "width": 12, "height": 12 }, "color": "#FF4D4F" },
+        { "id": "traffic-yellow", "bounds": { "x": 61, "y": 207, "width": 12, "height": 12 }, "color": "#F59E0B" },
+        { "id": "traffic-green", "bounds": { "x": 82, "y": 207, "width": 12, "height": 12 }, "color": "#22C55E" },
+        { "id": "brand-logo", "bounds": { "x": 128, "y": 204, "width": 20, "height": 20 }, "asset": "assets/promptball/icons/promptball-logo.svg" },
+        { "id": "nav-workspace", "bounds": { "x": 276, "y": 205, "width": 70, "height": 34 }, "icon": "assets/promptball/part2/icons/nav-workspace.svg", "state": "active" },
+        { "id": "nav-command-library", "bounds": { "x": 371, "y": 205, "width": 75, "height": 34 }, "icon": "assets/promptball/part2/icons/nav-command-library.svg" },
+        { "id": "nav-settings", "bounds": { "x": 466, "y": 205, "width": 54, "height": 34 }, "icon": "assets/promptball/part1/icons/launcher-settings.svg" }
+      ]
+    },
+    {
+      "id": "top-navigation-tabs",
+      "label": "2. 顶部导航标签",
+      "bounds": { "x": 38, "y": 335, "width": 416, "height": 103 },
+      "states": ["default-active", "inactive"],
+      "items": [
+        { "id": "workspace", "label": "工作台", "icon": "assets/promptball/part2/icons/nav-workspace.svg" },
+        { "id": "command-library", "label": "命令库", "icon": "assets/promptball/part2/icons/nav-command-library.svg" },
+        { "id": "settings", "label": "设置", "icon": "assets/promptball/part1/icons/launcher-settings.svg" }
+      ]
+    },
+    {
+      "id": "section-tabs",
+      "label": "3. 区域标签（Section Tabs）",
+      "bounds": { "x": 24, "y": 501, "width": 345, "height": 98 },
+      "items": [
+        { "id": "prompt-editor", "label": "Prompt 编辑区", "style": "outline" },
+        { "id": "optimized", "label": "已优化", "style": "success" },
+        { "id": "auto-enhanced", "label": "已自动增强原始内容", "style": "muted" }
+      ]
+    },
+    {
+      "id": "prompt-editor-card",
+      "label": "4. 主题提示词编辑卡片",
+      "bounds": { "x": 24, "y": 643, "width": 510, "height": 396 },
+      "children": [
+        { "id": "editor-header", "bounds": { "x": 38, "y": 657, "width": 482, "height": 38 } },
+        { "id": "editor-textarea", "bounds": { "x": 38, "y": 694, "width": 482, "height": 164 } },
+        { "id": "editor-optimization-preview", "bounds": { "x": 38, "y": 906, "width": 482, "height": 48 }, "icon": "assets/promptball/part2/icons/optimization-banner.svg" },
+        { "id": "editor-action-bar", "bounds": { "x": 38, "y": 979, "width": 482, "height": 36 } }
+      ]
+    },
+    {
+      "id": "textarea",
+      "label": "5. 文本编辑区（Textarea）",
+      "bounds": { "x": 562, "y": 12, "width": 455, "height": 565 },
+      "states": [
+        { "id": "empty", "bounds": { "x": 562, "y": 88, "width": 442, "height": 112 }, "placeholder": "在此输入你的 Prompt...." },
+        { "id": "filled", "bounds": { "x": 562, "y": 250, "width": 442, "height": 326 }, "counter": "字数 328 / 8000", "version": "v3" }
+      ]
+    },
+    {
+      "id": "optimization-banner",
+      "label": "6. 优化状态横幅",
+      "bounds": { "x": 548, "y": 584, "width": 470, "height": 105 },
+      "bannerBounds": { "x": 562, "y": 628, "width": 442, "height": 40 },
+      "icon": "assets/promptball/part2/icons/optimization-banner.svg"
+    },
+    {
+      "id": "action-bar",
+      "label": "7. 底部操作栏",
+      "bounds": { "x": 548, "y": 703, "width": 470, "height": 93 },
+      "buttons": [
+        { "id": "optimize", "label": "优化", "bounds": { "x": 562, "y": 747, "width": 61, "height": 32 }, "variant": "primary", "icon": "assets/promptball/part2/icons/action-optimize.svg" },
+        { "id": "score", "label": "评分", "bounds": { "x": 632, "y": 747, "width": 63, "height": 32 }, "variant": "secondary", "icon": "assets/promptball/part2/icons/action-score.svg" },
+        { "id": "favorite", "label": "收藏", "bounds": { "x": 706, "y": 747, "width": 63, "height": 32 }, "variant": "secondary", "icon": "assets/promptball/part2/icons/action-favorite.svg" },
+        { "id": "copy", "label": "复制", "bounds": { "x": 779, "y": 747, "width": 63, "height": 32 }, "variant": "secondary", "icon": "assets/promptball/part2/icons/action-copy.svg" },
+        { "id": "more", "label": "更多", "bounds": { "x": 851, "y": 747, "width": 52, "height": 32 }, "variant": "secondary", "icon": "assets/promptball/part2/icons/action-more-chevron.svg" },
+        { "id": "score-chip", "label": "综合评分 86/100", "bounds": { "x": 913, "y": 747, "width": 93, "height": 32 }, "variant": "score" }
+      ]
+    },
+    {
+      "id": "score-chip",
+      "label": "8. 评分显示芯片",
+      "bounds": { "x": 562, "y": 853, "width": 442, "height": 35 },
+      "examples": [
+        { "label": "综合评分", "value": "86/100", "tone": "success" },
+        { "label": "综合评分", "value": "62/100", "tone": "warning" },
+        { "label": "综合评分", "value": "28/100", "tone": "danger" },
+        { "label": "综合评分", "value": "--/100", "tone": "muted" }
+      ]
+    },
+    {
+      "id": "card-container",
+      "label": "9. 卡片容器",
+      "bounds": { "x": 562, "y": 982, "width": 442, "height": 73 },
+      "variants": [
+        { "id": "default-card", "bounds": { "x": 562, "y": 982, "width": 206, "height": 73 }, "style": "solid-border" },
+        { "id": "dashed-card", "bounds": { "x": 787, "y": 982, "width": 217, "height": 73 }, "style": "dashed-info" }
+      ]
+    },
+    {
+      "id": "ui-components",
+      "label": "10. 通用组件库",
+      "bounds": { "x": 1031, "y": 12, "width": 406, "height": 1034 },
+      "sections": [
+        "Pill Tabs / 标签",
+        "Status Badges",
+        "Icon Buttons",
+        "Primary Button",
+        "Secondary Button",
+        "Divider"
+      ],
+      "icons": [
+        "assets/promptball/part2/icons/icon-button-edit.svg",
+        "assets/promptball/part2/icons/action-favorite.svg",
+        "assets/promptball/part2/icons/icon-button-copy-square.svg",
+        "assets/promptball/part2/icons/action-more.svg",
+        "assets/promptball/part2/icons/divider-dashed.svg"
+      ]
+    }
+  ],
+  "assets": [
+    "assets/promptball/icons/promptball-logo.svg",
+    "assets/promptball/part1/icons/launcher-settings.svg",
+    "assets/promptball/part2/icons/nav-workspace.svg",
+    "assets/promptball/part2/icons/nav-command-library.svg",
+    "assets/promptball/part2/icons/optimization-banner.svg",
+    "assets/promptball/part2/icons/action-optimize.svg",
+    "assets/promptball/part2/icons/action-score.svg",
+    "assets/promptball/part2/icons/action-favorite.svg",
+    "assets/promptball/part2/icons/action-copy.svg",
+    "assets/promptball/part2/icons/action-more.svg",
+    "assets/promptball/part2/icons/action-more-chevron.svg",
+    "assets/promptball/part2/icons/icon-button-edit.svg",
+    "assets/promptball/part2/icons/icon-button-copy-square.svg",
+    "assets/promptball/part2/icons/score-trend-up.svg",
+    "assets/promptball/part2/icons/divider-dashed.svg"
+  ]
+}

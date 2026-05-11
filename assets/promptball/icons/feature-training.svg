@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Scientific Training">
+  <path d="M7 4H5.8C4.8 4 4 4.8 4 5.8V8M17 4H18.2C19.2 4 20 4.8 20 5.8V8M4 16V18.2C4 19.2 4.8 20 5.8 20H8M20 16V18.2C20 19.2 19.2 20 18.2 20H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <path d="M9 12C9 10.3 10.3 9 12 9C13.7 9 15 10.3 15 12C15 13.7 13.7 15 12 15" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="12" cy="15" r="1.2" fill="currentColor"/>
+</svg>

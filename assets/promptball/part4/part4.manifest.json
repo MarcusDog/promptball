@@ -1,0 +1,173 @@
+{
+  "id": "promptball-part4-prompt-library",
+  "name": "Part 4 - Prompt 库 / 斜杠命令",
+  "source": {
+    "image": "ui/part4.png",
+    "width": 1448,
+    "height": 1086
+  },
+  "tokens": {
+    "primary": "#2563FF",
+    "primaryCanonical": "#2563EB",
+    "hover": "#EFF4FF",
+    "selected": "#E6F0FF",
+    "score": "#16A34A",
+    "textPrimary": "#111827",
+    "textSecondary": "#6B7280",
+    "border": "#E5E7EB",
+    "surface": "#FFFFFF",
+    "radiusCard": 12,
+    "radiusControl": 8,
+    "shadow": "0 4px 16px rgba(17,24,39,0.06)"
+  },
+  "regions": [
+    {
+      "id": "page-title",
+      "label": "页面标题",
+      "bounds": { "x": 25, "y": 27, "width": 680, "height": 58 },
+      "text": ["Prompt 库 / 斜杠命令", "PromptBall 桌面端 · Prompt 库（斜杠命令）模块 · 组件与样式资产"]
+    },
+    {
+      "id": "module-container",
+      "label": "01 模块容器（参考）",
+      "bounds": { "x": 24, "y": 140, "width": 324, "height": 344 },
+      "children": [
+        { "id": "module-title", "bounds": { "x": 38, "y": 160, "width": 220, "height": 26 } },
+        { "id": "inner-tabbar", "bounds": { "x": 34, "y": 194, "width": 294, "height": 42 } },
+        { "id": "category-list", "bounds": { "x": 52, "y": 252, "width": 240, "height": 155 } },
+        { "id": "view-all-link", "bounds": { "x": 53, "y": 438, "width": 130, "height": 22 } }
+      ]
+    },
+    {
+      "id": "tab-bar",
+      "label": "02 标签页（Tab Bar）",
+      "bounds": { "x": 407, "y": 140, "width": 409, "height": 230 },
+      "items": ["全部", "常用", "模板", "收藏", "历史"],
+      "states": [
+        { "id": "default", "bounds": { "x": 407, "y": 140, "width": 409, "height": 50 } },
+        { "id": "hover", "bounds": { "x": 407, "y": 230, "width": 409, "height": 50 } },
+        { "id": "active", "bounds": { "x": 407, "y": 320, "width": 409, "height": 50 } }
+      ]
+    },
+    {
+      "id": "search-filter",
+      "label": "03 搜索与筛选",
+      "bounds": { "x": 1063, "y": 151, "width": 320, "height": 125 },
+      "children": [
+        { "id": "search-box", "bounds": { "x": 1063, "y": 151, "width": 212, "height": 38 }, "icons": ["assets/promptball/part4/icons/icon-search.svg", "assets/promptball/part4/icons/icon-clear.svg"] },
+        { "id": "filter-button", "bounds": { "x": 1285, "y": 151, "width": 79, "height": 38 }, "icon": "assets/promptball/part4/icons/icon-filter.svg" },
+        { "id": "view-button", "bounds": { "x": 1376, "y": 151, "width": 49, "height": 38 }, "icon": "assets/promptball/part4/icons/icon-sort-view.svg" },
+        { "id": "filter-tokens", "bounds": { "x": 1063, "y": 238, "width": 325, "height": 38 } }
+      ]
+    },
+    {
+      "id": "category-links",
+      "label": "04 类别链接列表",
+      "bounds": { "x": 1087, "y": 388, "width": 288, "height": 191 },
+      "items": [
+        { "id": "academic-writing", "command": "/学术写作", "description": "学术论文、报告写作模板", "icon": "assets/promptball/part4/icons/category-pen.svg" },
+        { "id": "teaching-design", "command": "/教学设计", "description": "课程与教案模板", "icon": "assets/promptball/part4/icons/category-pen.svg" },
+        { "id": "code-programming", "command": "/代码编程", "description": "代码说明与注释模板", "icon": "assets/promptball/part4/icons/category-pen.svg" },
+        { "id": "data-analysis", "command": "/数据分析", "description": "数据分析可视化模板", "icon": "assets/promptball/part4/icons/category-data-lock.svg" },
+        { "id": "creative-writing", "command": "/创意写作", "description": "故事与文案创作模板", "icon": "assets/promptball/part4/icons/category-pen.svg" }
+      ]
+    },
+    {
+      "id": "action-button",
+      "label": "05 操作按钮",
+      "bounds": { "x": 1083, "y": 644, "width": 226, "height": 63 },
+      "text": "查看全部命令 ->"
+    },
+    {
+      "id": "prompt-cards",
+      "label": "06 Prompt 卡片（多种状态）",
+      "bounds": { "x": 408, "y": 426, "width": 636, "height": 295 },
+      "cardSize": { "width": 202, "height": 126 },
+      "states": [
+        { "id": "default", "bounds": { "x": 408, "y": 426, "width": 202, "height": 126 } },
+        { "id": "hover", "bounds": { "x": 625, "y": 426, "width": 202, "height": 126 } },
+        { "id": "favorite", "bounds": { "x": 849, "y": 426, "width": 202, "height": 126 } },
+        { "id": "selected", "bounds": { "x": 408, "y": 594, "width": 202, "height": 126 }, "icon": "assets/promptball/part4/icons/card-selected-check.svg" },
+        { "id": "disabled", "bounds": { "x": 626, "y": 594, "width": 202, "height": 126 } },
+        { "id": "loading", "bounds": { "x": 840, "y": 594, "width": 202, "height": 126 } }
+      ]
+    },
+    {
+      "id": "card-content-elements",
+      "label": "07 卡片内容元素",
+      "bounds": { "x": 32, "y": 798, "width": 935, "height": 68 },
+      "elements": [
+        { "id": "title", "bounds": { "x": 32, "y": 799, "width": 199, "height": 49 } },
+        { "id": "description", "bounds": { "x": 261, "y": 799, "width": 236, "height": 60 } },
+        { "id": "metadata-row", "bounds": { "x": 535, "y": 798, "width": 431, "height": 67 } }
+      ]
+    },
+    {
+      "id": "icon-library",
+      "label": "08 图标库",
+      "bounds": { "x": 191, "y": 903, "width": 1190, "height": 48 },
+      "items": [
+        { "id": "search", "asset": "assets/promptball/part4/icons/icon-search.svg" },
+        { "id": "clear", "asset": "assets/promptball/part4/icons/icon-clear.svg" },
+        { "id": "filter", "asset": "assets/promptball/part4/icons/icon-filter.svg" },
+        { "id": "sort-view", "asset": "assets/promptball/part4/icons/icon-sort-view.svg" },
+        { "id": "dropdown", "asset": "assets/promptball/part4/icons/icon-dropdown.svg" },
+        { "id": "expand", "asset": "assets/promptball/part4/icons/icon-expand.svg" },
+        { "id": "selected", "asset": "assets/promptball/part4/icons/icon-selected.svg" },
+        { "id": "add", "asset": "assets/promptball/part4/icons/icon-add.svg" },
+        { "id": "reset", "asset": "assets/promptball/part4/icons/icon-reset.svg" },
+        { "id": "link", "asset": "assets/promptball/part4/icons/icon-link.svg" },
+        { "id": "edit", "asset": "assets/promptball/part4/icons/icon-edit.svg" },
+        { "id": "code", "asset": "assets/promptball/part4/icons/icon-code.svg" },
+        { "id": "academic", "asset": "assets/promptball/part4/icons/icon-academic.svg" },
+        { "id": "teaching", "asset": "assets/promptball/part4/icons/icon-teaching.svg" },
+        { "id": "data", "asset": "assets/promptball/part4/icons/icon-data.svg" },
+        { "id": "creative-writing", "asset": "assets/promptball/part4/icons/icon-creative-writing.svg" },
+        { "id": "view", "asset": "assets/promptball/part4/icons/icon-view.svg" },
+        { "id": "favorite-default", "asset": "assets/promptball/part4/icons/icon-favorite-default.svg" },
+        { "id": "favorite-selected", "asset": "assets/promptball/part4/icons/icon-favorite-selected.svg" },
+        { "id": "loading", "asset": "assets/promptball/part4/icons/icon-loading.svg" }
+      ]
+    },
+    {
+      "id": "style-extract",
+      "label": "09 颜色与样式参考",
+      "bounds": { "x": 25, "y": 994, "width": 1399, "height": 68 },
+      "colors": [
+        { "id": "primary", "value": "#2563FF" },
+        { "id": "hover", "value": "#EFF4FF" },
+        { "id": "selected", "value": "#E6F0FF" },
+        { "id": "score", "value": "#16A34A" },
+        { "id": "textPrimary", "value": "#111827" },
+        { "id": "textSecondary", "value": "#6B7280" },
+        { "id": "border", "value": "#E5E7EB" },
+        { "id": "shadow", "value": "0 4px 16px rgba(17,24,39,0.06)" }
+      ]
+    }
+  ],
+  "assets": [
+    "assets/promptball/part4/icons/icon-search.svg",
+    "assets/promptball/part4/icons/icon-clear.svg",
+    "assets/promptball/part4/icons/icon-filter.svg",
+    "assets/promptball/part4/icons/icon-sort-view.svg",
+    "assets/promptball/part4/icons/icon-dropdown.svg",
+    "assets/promptball/part4/icons/icon-expand.svg",
+    "assets/promptball/part4/icons/icon-selected.svg",
+    "assets/promptball/part4/icons/icon-add.svg",
+    "assets/promptball/part4/icons/icon-reset.svg",
+    "assets/promptball/part4/icons/icon-link.svg",
+    "assets/promptball/part4/icons/icon-edit.svg",
+    "assets/promptball/part4/icons/icon-code.svg",
+    "assets/promptball/part4/icons/icon-academic.svg",
+    "assets/promptball/part4/icons/icon-teaching.svg",
+    "assets/promptball/part4/icons/icon-data.svg",
+    "assets/promptball/part4/icons/icon-creative-writing.svg",
+    "assets/promptball/part4/icons/icon-view.svg",
+    "assets/promptball/part4/icons/icon-favorite-default.svg",
+    "assets/promptball/part4/icons/icon-favorite-selected.svg",
+    "assets/promptball/part4/icons/icon-loading.svg",
+    "assets/promptball/part4/icons/card-selected-check.svg",
+    "assets/promptball/part4/icons/category-pen.svg",
+    "assets/promptball/part4/icons/category-data-lock.svg"
+  ]
+}

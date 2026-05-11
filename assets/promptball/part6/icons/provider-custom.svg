@@ -1,0 +1,4 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="自定义 Provider">
+  <circle cx="8" cy="8" r="6" stroke="currentColor" stroke-width="1.4"/>
+  <path d="M6 8L7.4 9.4L10.2 6.6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

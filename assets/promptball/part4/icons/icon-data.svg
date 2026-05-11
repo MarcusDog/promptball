@@ -1,0 +1,5 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="数据">
+  <path d="M4 15.5V11.5M8 15.5V8.5M12 15.5V5.5M16 15.5V9.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M4 9L8 6.8L12 8L16 4.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M14 4.8H16V6.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

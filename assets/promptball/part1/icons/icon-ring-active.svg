@@ -1,0 +1,18 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="激活光环">
+  <defs>
+    <radialGradient id="active-ring-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 12) scale(11)">
+      <stop stop-color="#00D2FF" stop-opacity="0.48"/>
+      <stop offset="0.58" stop-color="#4F6BFF" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#4F6BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="active-ring-fill" x1="6" y1="5" x2="18" y2="20" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A5CFF"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#00D2FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="12" cy="12" r="11" fill="url(#active-ring-glow)"/>
+  <circle cx="12" cy="12" r="8" fill="white"/>
+  <circle cx="12" cy="12" r="6.2" fill="url(#active-ring-fill)"/>
+  <circle cx="15.5" cy="7.4" r="1.2" fill="#7CFFEE"/>
+</svg>

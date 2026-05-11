@@ -1,0 +1,5 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="胜出">
+  <path d="M6 4H14V7.2C14 9.4 12.2 11.2 10 11.2C7.8 11.2 6 9.4 6 7.2V4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+  <path d="M6 5.5H3.8V6.8C3.8 8.1 4.8 9.2 6.1 9.3M14 5.5H16.2V6.8C16.2 8.1 15.2 9.2 13.9 9.3" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/>
+  <path d="M10 11.2V14M7.5 16H12.5M8.2 14H11.8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

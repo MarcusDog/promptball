@@ -1,0 +1,11 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PromptBall floating glow">
+  <defs>
+    <radialGradient id="pb-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(60 62) rotate(90) scale(58)">
+      <stop stop-color="#2563EB" stop-opacity="0.46"/>
+      <stop offset="0.44" stop-color="#6A5CFF" stop-opacity="0.22"/>
+      <stop offset="0.7" stop-color="#00D2FF" stop-opacity="0.16"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <circle cx="60" cy="60" r="58" fill="url(#pb-glow)"/>
+</svg>

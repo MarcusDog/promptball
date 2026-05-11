@@ -1,0 +1,7 @@
+ALTER TABLE templates ADD COLUMN scenario TEXT NOT NULL DEFAULT '';
+ALTER TABLE templates ADD COLUMN applicable_models TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE templates ADD COLUMN variables TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE templates ADD COLUMN output_example TEXT NOT NULL DEFAULT '';
+ALTER TABLE templates ADD COLUMN evaluation_criteria TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE templates ADD COLUMN tags TEXT NOT NULL DEFAULT '[]';
+ALTER TABLE templates ADD COLUMN updated_at TEXT NOT NULL DEFAULT '';

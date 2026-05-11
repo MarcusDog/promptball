@@ -1,0 +1,31 @@
+:root {
+  --pb-primary: #2563eb;
+  --pb-primary-hover: #1d4ed8;
+  --pb-primary-soft: #e6f0ff;
+  --pb-primary-tint: #eff4ff;
+  --pb-primary-gradient-start: #4f6bff;
+  --pb-primary-gradient-end: #00d2ff;
+  --pb-success: #16a34a;
+  --pb-success-soft: #dcfce7;
+  --pb-info: #3b82f6;
+  --pb-warning: #f59e0b;
+  --pb-warning-soft: #fff7ed;
+  --pb-danger: #ef4444;
+  --pb-danger-soft: #fef2f2;
+  --pb-purple: #8b5cf6;
+  --pb-text-primary: #111827;
+  --pb-text-secondary: #6b7280;
+  --pb-text-muted: #94a3b8;
+  --pb-border: #e5e7eb;
+  --pb-surface: #ffffff;
+  --pb-background: #f8fafc;
+  --pb-background-alt: #f7f8fa;
+  --pb-radius-control: 8px;
+  --pb-radius-card: 12px;
+  --pb-radius-pill: 999px;
+  --pb-shadow-card: 0 2px 8px rgba(16, 24, 40, 0.06);
+  --pb-shadow-panel: 0 8px 24px rgba(16, 24, 40, 0.08);
+  --pb-shadow-popover: 0 10px 30px rgba(16, 24, 40, 0.08);
+  --pb-shadow-floating-ball: 0 18px 48px rgba(37, 99, 235, 0.32);
+  --pb-font-sans: Inter, "PingFang SC", ui-sans-serif, system-ui, sans-serif;
+}

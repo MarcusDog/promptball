@@ -1,0 +1,19 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="PromptBall floating ball hover">
+  <defs>
+    <radialGradient id="pb-ball-hover-glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(32 34) rotate(90) scale(38)">
+      <stop stop-color="#00D2FF" stop-opacity="0.46"/>
+      <stop offset="0.55" stop-color="#4F6BFF" stop-opacity="0.26"/>
+      <stop offset="1" stop-color="#4F6BFF" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="pb-ball-hover-fill" x1="12" y1="8" x2="52" y2="58" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#6A5CFF"/>
+      <stop offset="0.55" stop-color="#2563EB"/>
+      <stop offset="1" stop-color="#00D2FF"/>
+    </linearGradient>
+  </defs>
+  <circle cx="32" cy="34" r="30" fill="url(#pb-ball-hover-glow)"/>
+  <circle cx="32" cy="32" r="26" fill="white"/>
+  <circle cx="32" cy="32" r="22" fill="url(#pb-ball-hover-fill)"/>
+  <path d="M21.2 33.2C21.2 25.4 27.5 19.1 35.3 19.1" stroke="#83FFF0" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+  <circle cx="42.6" cy="20.2" r="3.2" fill="#7CFFEE"/>
+</svg>

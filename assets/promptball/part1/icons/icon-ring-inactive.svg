@@ -1,0 +1,5 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="悬停光环">
+  <circle cx="12" cy="12" r="8" fill="#EAF1FF"/>
+  <circle cx="12" cy="12" r="6" stroke="#C8D7FF" stroke-width="2" opacity="0.8"/>
+  <circle cx="12" cy="12" r="4" fill="#F8FAFF"/>
+</svg>

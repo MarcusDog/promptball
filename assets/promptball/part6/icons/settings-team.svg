@@ -1,0 +1,6 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="团队与协作">
+  <circle cx="7.2" cy="7.4" r="2.2" stroke="currentColor" stroke-width="1.7"/>
+  <circle cx="13.2" cy="8.2" r="1.8" stroke="currentColor" stroke-width="1.5"/>
+  <path d="M3.5 15.5C3.9 13.5 5.4 12.2 7.2 12.2C9 12.2 10.5 13.5 10.9 15.5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+  <path d="M11.4 13.2C12 12.5 12.7 12.2 13.4 12.2C14.9 12.2 16 13.2 16.4 15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

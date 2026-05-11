@@ -1,0 +1,5 @@
+<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="OpenAI">
+  <circle cx="8" cy="8" r="7" fill="#0F172A"/>
+  <path d="M8 3.8L11.5 5.8V10.2L8 12.2L4.5 10.2V5.8L8 3.8Z" stroke="white" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M4.7 5.9L8 8L11.3 5.9M8 8V12" stroke="white" stroke-width="1" stroke-linejoin="round"/>
+</svg>

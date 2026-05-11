@@ -1,0 +1,160 @@
+{
+  "id": "promptball-part7-ab-test-compare",
+  "name": "Part 7 - A/B 测试对比模块",
+  "source": {
+    "image": "ui/part7.png",
+    "width": 1448,
+    "height": 1086
+  },
+  "tokens": {
+    "primary": "#2563EB",
+    "success": "#16A34A",
+    "warning": "#F59E0B",
+    "textPrimary": "#1F2329",
+    "textSecondary": "#6B7280",
+    "border": "#E5E7EB",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "radiusCard": 12,
+    "radiusButton": 8,
+    "radiusBadge": 999,
+    "cardShadow": "0 2px 8px rgba(16,24,40,0.06)",
+    "selectedShadow": "0 8px 24px rgba(16,24,40,0.08)",
+    "cardPadding": 16,
+    "columnGap": 24,
+    "regionGap": 24
+  },
+  "regions": [
+    {
+      "id": "page-title",
+      "label": "页面标题",
+      "bounds": { "x": 26, "y": 23, "width": 700, "height": 58 },
+      "text": ["Part 7 A/B 测试对比模块", "PromptBall 桌面端 · A/B 测试对比模块 · 组件与样式资产"]
+    },
+    {
+      "id": "complete-compare-card",
+      "label": "1. 完整对比卡片",
+      "bounds": { "x": 24, "y": 95, "width": 680, "height": 318 },
+      "children": [
+        { "id": "prompt-a-card", "bounds": { "x": 47, "y": 143, "width": 304, "height": 184 } },
+        { "id": "prompt-b-card", "bounds": { "x": 370, "y": 143, "width": 309, "height": 184 } },
+        { "id": "action-bar", "bounds": { "x": 55, "y": 348, "width": 620, "height": 41 } }
+      ]
+    },
+    {
+      "id": "two-column-layout",
+      "label": "2. 双列对比布局",
+      "bounds": { "x": 724, "y": 95, "width": 689, "height": 198 },
+      "layoutSpec": {
+        "containerPadding": 24,
+        "columnGap": 24,
+        "columns": "1fr 1fr",
+        "recommendedMinWidth": 760,
+        "cardPadding": 16
+      }
+    },
+    {
+      "id": "header-area",
+      "label": "3. 顶部标题区域",
+      "bounds": { "x": 724, "y": 309, "width": 338, "height": 104 },
+      "children": [
+        { "id": "number-badge", "bounds": { "x": 742, "y": 362, "width": 28, "height": 28 } },
+        { "id": "title", "bounds": { "x": 776, "y": 367, "width": 130, "height": 24 } },
+        { "id": "score-a", "bounds": { "x": 914, "y": 363, "width": 52, "height": 42 } },
+        { "id": "score-b", "bounds": { "x": 998, "y": 363, "width": 52, "height": 42 } }
+      ]
+    },
+    {
+      "id": "card-states",
+      "label": "4. Prompt 对比卡片状态",
+      "bounds": { "x": 24, "y": 429, "width": 680, "height": 235 },
+      "states": [
+        { "id": "default", "bounds": { "x": 39, "y": 498, "width": 217, "height": 131 } },
+        { "id": "selected-winner", "bounds": { "x": 273, "y": 498, "width": 205, "height": 131 }, "icon": "assets/promptball/part7/icons/card-winner-check.svg" },
+        { "id": "neutral", "bounds": { "x": 497, "y": 498, "width": 195, "height": 131 } }
+      ]
+    },
+    {
+      "id": "action-bar",
+      "label": "5. 底部操作按钮区",
+      "bounds": { "x": 24, "y": 679, "width": 680, "height": 193 },
+      "buttons": [
+        { "id": "a-win", "label": "A 胜出", "variant": "primary", "color": "#2563EB", "icon": "assets/promptball/part7/icons/icon-winner.svg" },
+        { "id": "b-win", "label": "B 胜出", "variant": "success", "color": "#16A34A", "icon": "assets/promptball/part7/icons/icon-winner.svg" },
+        { "id": "retest", "label": "重新测试", "variant": "secondary", "icon": "assets/promptball/part7/icons/icon-refresh.svg" },
+        { "id": "save-compare", "label": "保存对比", "variant": "warning", "icon": "assets/promptball/part7/icons/icon-warning-save.svg" }
+      ],
+      "states": ["default", "hover", "disabled"]
+    },
+    {
+      "id": "score-tag",
+      "label": "6. 分数标签",
+      "bounds": { "x": 1077, "y": 309, "width": 336, "height": 104 },
+      "items": [
+        { "label": "78 分", "tone": "primary", "asset": "assets/promptball/part7/icons/score-dot-primary.svg" },
+        { "label": "90 分", "tone": "success", "asset": "assets/promptball/part7/icons/score-dot-success.svg" },
+        { "label": "60 分", "tone": "warning", "asset": "assets/promptball/part7/icons/score-dot-warning.svg" },
+        { "label": "-- 分", "tone": "neutral", "asset": "assets/promptball/part7/icons/score-dot-neutral.svg" }
+      ]
+    },
+    {
+      "id": "content-preview",
+      "label": "7. 内容预览文本区",
+      "bounds": { "x": 724, "y": 429, "width": 689, "height": 142 },
+      "previewBounds": { "x": 748, "y": 472, "width": 448, "height": 60 },
+      "textSpec": {
+        "fontSize": 14,
+        "lineHeight": 20,
+        "color": "#1F2329",
+        "maxLines": 3
+      }
+    },
+    {
+      "id": "link-style",
+      "label": "8. 链接样式",
+      "bounds": { "x": 724, "y": 574, "width": 199, "height": 119 },
+      "icon": "assets/promptball/part7/icons/icon-arrow-right.svg",
+      "text": "查看详情 ->"
+    },
+    {
+      "id": "icon-library",
+      "label": "9. 图标库",
+      "bounds": { "x": 937, "y": 574, "width": 476, "height": 119 },
+      "items": [
+        { "id": "compare", "asset": "assets/promptball/part7/icons/icon-compare.svg" },
+        { "id": "refresh", "asset": "assets/promptball/part7/icons/icon-refresh.svg" },
+        { "id": "save", "asset": "assets/promptball/part7/icons/icon-save.svg" },
+        { "id": "winner", "asset": "assets/promptball/part7/icons/icon-winner.svg" },
+        { "id": "arrow", "asset": "assets/promptball/part7/icons/icon-arrow-right.svg" },
+        { "id": "check", "asset": "assets/promptball/part7/icons/icon-check.svg" }
+      ]
+    },
+    {
+      "id": "button-styles",
+      "label": "10. 按钮样式",
+      "bounds": { "x": 724, "y": 704, "width": 689, "height": 169 },
+      "variants": ["primary", "success", "secondary", "warning"],
+      "states": ["default", "hover", "disabled"]
+    },
+    {
+      "id": "specs-tokens",
+      "label": "11. 状态说明 & 设计规范",
+      "bounds": { "x": 24, "y": 890, "width": 1389, "height": 176 },
+      "sections": ["状态说明", "圆角", "阴影", "间距", "颜色规范", "字体规范"]
+    }
+  ],
+  "assets": [
+    "assets/promptball/part7/icons/icon-compare.svg",
+    "assets/promptball/part7/icons/icon-refresh.svg",
+    "assets/promptball/part7/icons/icon-save.svg",
+    "assets/promptball/part7/icons/icon-winner.svg",
+    "assets/promptball/part7/icons/icon-arrow-right.svg",
+    "assets/promptball/part7/icons/icon-check.svg",
+    "assets/promptball/part7/icons/icon-warning-save.svg",
+    "assets/promptball/part7/icons/card-winner-check.svg",
+    "assets/promptball/part7/icons/score-dot-primary.svg",
+    "assets/promptball/part7/icons/score-dot-success.svg",
+    "assets/promptball/part7/icons/score-dot-warning.svg",
+    "assets/promptball/part7/icons/score-dot-neutral.svg"
+  ]
+}

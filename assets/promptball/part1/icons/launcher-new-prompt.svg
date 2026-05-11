@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="新建 Prompt">
+  <path d="M4 17.5L14.7 6.8L17.2 9.3L6.5 20H4V17.5Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  <path d="M12.8 8.7L15.3 11.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M18.5 4.5H21M19.75 3.25V5.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M5.4 7.4L7.4 5.4M7.4 5.4L8.7 6.7M7.4 5.4L6.1 4.1" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+</svg>

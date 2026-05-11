@@ -1,0 +1,5 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="概览">
+  <rect x="4" y="5" width="4" height="10" rx="1" stroke="currentColor" stroke-width="1.7"/>
+  <rect x="12" y="8" width="4" height="7" rx="1" stroke="currentColor" stroke-width="1.7"/>
+  <path d="M6 3.5V5M14 5.8V8" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/>
+</svg>

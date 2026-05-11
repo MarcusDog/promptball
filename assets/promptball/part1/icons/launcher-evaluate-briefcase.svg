@@ -1,0 +1,6 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="评估">
+  <path d="M9 7V5.8C9 4.8 9.8 4 10.8 4H13.2C14.2 4 15 4.8 15 5.8V7" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+  <rect x="4" y="7" width="16" height="13" rx="2.2" stroke="currentColor" stroke-width="2"/>
+  <path d="M4 12H20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M10 12.2H14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,187 @@
+{
+  "brandAssets": [
+    {
+      "id": "promptball-logo",
+      "type": "svg",
+      "path": "assets/promptball/icons/promptball-logo.svg",
+      "size": "32x32",
+      "usage": "App header logo, small brand mark"
+    },
+    {
+      "id": "floating-ball-default",
+      "type": "svg",
+      "path": "assets/promptball/icons/floating-ball-default.svg",
+      "size": "64x64",
+      "usage": "Floating launcher idle/default state"
+    },
+    {
+      "id": "floating-ball-hover",
+      "type": "svg",
+      "path": "assets/promptball/icons/floating-ball-hover.svg",
+      "size": "64x64",
+      "usage": "Floating launcher hover state"
+    },
+    {
+      "id": "floating-ball-active",
+      "type": "svg",
+      "path": "assets/promptball/icons/floating-ball-active.svg",
+      "size": "64x64",
+      "usage": "Floating launcher active/expanded state"
+    },
+    {
+      "id": "floating-glow",
+      "type": "svg",
+      "path": "assets/promptball/icons/floating-glow.svg",
+      "size": "120x120",
+      "usage": "Optional glow layer behind floating ball"
+    },
+    {
+      "id": "pro-badge",
+      "type": "svg",
+      "path": "assets/promptball/icons/pro-badge.svg",
+      "size": "64x32",
+      "usage": "Pro subscription badge"
+    }
+  ],
+  "featureAssets": [
+    {
+      "id": "feature-better-prompt",
+      "type": "svg-currentColor",
+      "path": "assets/promptball/icons/feature-better-prompt.svg",
+      "size": "24x24",
+      "usage": "Top feature card: 更好 Prompt"
+    },
+    {
+      "id": "feature-quality",
+      "type": "svg-currentColor",
+      "path": "assets/promptball/icons/feature-quality.svg",
+      "size": "24x24",
+      "usage": "Top feature card: 更高质量"
+    },
+    {
+      "id": "feature-fast-apply",
+      "type": "svg-currentColor",
+      "path": "assets/promptball/icons/feature-fast-apply.svg",
+      "size": "24x24",
+      "usage": "Top feature card: 更快应用"
+    },
+    {
+      "id": "feature-training",
+      "type": "svg-currentColor",
+      "path": "assets/promptball/icons/feature-training.svg",
+      "size": "24x24",
+      "usage": "Top feature card: 更科学训练"
+    }
+  ],
+  "lucideIconMap": {
+    "new-command": "LayoutGrid",
+    "settings": "Settings",
+    "optimize": "Compass",
+    "new-prompt": "SquarePlus",
+    "open-library": "Zap",
+    "evaluate": "Briefcase",
+    "ab-test": "CircleDot",
+    "dark-mode": "Moon",
+    "workspace": "CircleGauge",
+    "prompt-library": "PanelsTopLeft",
+    "more": "Ellipsis",
+    "copy": "Copy",
+    "favorite": "Star",
+    "favorite-filled": "Star",
+    "score": "BadgeCheck",
+    "search": "Search",
+    "clear": "X",
+    "filter": "SlidersHorizontal",
+    "sort-view": "ListFilter",
+    "dropdown": "ChevronDown",
+    "collapse": "ChevronUp",
+    "selected": "CheckCircle",
+    "add": "Plus",
+    "reset": "RotateCcw",
+    "link": "Link",
+    "edit": "Pencil",
+    "code": "Code2",
+    "academic": "BookOpen",
+    "teaching": "GraduationCap",
+    "data": "ChartNoAxesCombined",
+    "creative-writing": "PencilLine",
+    "view": "Eye",
+    "loading": "LoaderCircle",
+    "chart": "ChartNoAxesColumnIncreasing",
+    "clock": "Clock3",
+    "expand": "Maximize2",
+    "trash": "Trash2",
+    "save": "Save",
+    "api-playground": "Code",
+    "provider-model": "Box",
+    "privacy": "Lock",
+    "team": "Users",
+    "visibility": "Eye",
+    "hide": "EyeOff",
+    "compare": "GitCompareArrows",
+    "refresh": "RefreshCcw",
+    "winner": "Trophy",
+    "arrow-right": "ArrowRight",
+    "check": "CircleCheck"
+  },
+  "fieldLegend": [
+    { "id": "role", "label": "Role", "color": "#2563EB" },
+    { "id": "context", "label": "Context", "color": "#3B82F6" },
+    { "id": "goal", "label": "Goal", "color": "#3B82F6" },
+    { "id": "task", "label": "Task", "color": "#16A34A" },
+    { "id": "input", "label": "Input", "color": "#22C55E" },
+    { "id": "output", "label": "Output", "color": "#4ADE80" },
+    { "id": "requirement", "label": "Requirement", "color": "#F59E0B" },
+    { "id": "constraints", "label": "Constraints", "color": "#EF4444" },
+    { "id": "evaluation", "label": "Evaluation", "color": "#EF4444" },
+    { "id": "style", "label": "Style", "color": "#22C55E" }
+  ],
+  "tokenFiles": [
+    "assets/promptball/tokens/promptball.tokens.json",
+    "assets/promptball/tokens/promptball.tokens.css"
+  ],
+  "partManifests": [
+    {
+      "id": "part1-floating-launcher",
+      "source": "ui/part1.png",
+      "path": "assets/promptball/part1/part1.manifest.json",
+      "documentation": "documents/designs/parts/part1_floating_launcher_breakdown.md"
+    },
+    {
+      "id": "part2-workbench",
+      "source": "ui/part2.png",
+      "path": "assets/promptball/part2/part2.manifest.json",
+      "documentation": "documents/designs/parts/part2_workbench_breakdown.md"
+    },
+    {
+      "id": "part3-structured-prompt-builder",
+      "source": "ui/part3.png",
+      "path": "assets/promptball/part3/part3.manifest.json",
+      "documentation": "documents/designs/parts/part3_structured_prompt_builder_breakdown.md"
+    },
+    {
+      "id": "part4-prompt-library",
+      "source": "ui/part4.png",
+      "path": "assets/promptball/part4/part4.manifest.json",
+      "documentation": "documents/designs/parts/part4_prompt_library_breakdown.md"
+    },
+    {
+      "id": "part5-evaluation-dashboard",
+      "source": "ui/part5.png",
+      "path": "assets/promptball/part5/part5.manifest.json",
+      "documentation": "documents/designs/parts/part5_evaluation_dashboard_breakdown.md"
+    },
+    {
+      "id": "part6-settings",
+      "source": "ui/part6.png",
+      "path": "assets/promptball/part6/part6.manifest.json",
+      "documentation": "documents/designs/parts/part6_settings_breakdown.md"
+    },
+    {
+      "id": "part7-ab-test-compare",
+      "source": "ui/part7.png",
+      "path": "assets/promptball/part7/part7.manifest.json",
+      "documentation": "documents/designs/parts/part7_ab_test_compare_breakdown.md"
+    }
+  ]
+}

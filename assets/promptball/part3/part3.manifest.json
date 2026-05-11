@@ -1,0 +1,188 @@
+{
+  "id": "promptball-part3-structured-prompt-builder",
+  "name": "Part 3 - 结构化 Prompt 构建器",
+  "source": {
+    "image": "ui/part3.png",
+    "width": 1448,
+    "height": 1086
+  },
+  "tokens": {
+    "primary": "#2563EB",
+    "primaryHover": "#1D4ED8",
+    "primaryDisabled": "#C7D7FA",
+    "surface": "#FFFFFF",
+    "background": "#F8FAFC",
+    "border": "#E6EAF1",
+    "borderMuted": "#E5E7EB",
+    "textPrimary": "#111827",
+    "textSecondary": "#64748B",
+    "textMuted": "#94A3B8",
+    "danger": "#EF4444",
+    "success": "#16A34A",
+    "radiusCard": 12,
+    "radiusControl": 8,
+    "shadowCard": "0 1px 2px rgba(16,24,40,0.04), 0 8px 24px rgba(16,24,40,0.08)",
+    "fieldRowHeight": 42,
+    "inputHeight": 34,
+    "buttonHeight": 34,
+    "cardPadding": 24
+  },
+  "fieldLegend": [
+    { "id": "role", "label": "Role", "cn": "角色与身份", "color": "#2563EB", "asset": "assets/promptball/part3/icons/field-dot-role.svg" },
+    { "id": "context", "label": "Context", "cn": "上下文信息", "color": "#3B82F6", "asset": "assets/promptball/part3/icons/field-dot-context.svg" },
+    { "id": "goal", "label": "Goal", "cn": "目标", "color": "#3B82F6", "asset": "assets/promptball/part3/icons/field-dot-goal.svg" },
+    { "id": "task", "label": "Task", "cn": "任务指令", "color": "#16A34A", "asset": "assets/promptball/part3/icons/field-dot-task.svg" },
+    { "id": "input", "label": "Input", "cn": "输入信息", "color": "#22C55E", "asset": "assets/promptball/part3/icons/field-dot-input.svg" },
+    { "id": "output", "label": "Output", "cn": "输出要求", "color": "#4ADE80", "asset": "assets/promptball/part3/icons/field-dot-output.svg" },
+    { "id": "requirement", "label": "Requirement", "cn": "内容要求", "color": "#F59E0B", "asset": "assets/promptball/part3/icons/field-dot-requirement.svg" },
+    { "id": "constraints", "label": "Constraints", "cn": "限制条件", "color": "#EF4444", "asset": "assets/promptball/part3/icons/field-dot-constraints.svg" },
+    { "id": "evaluation", "label": "Evaluation", "cn": "评估标准", "color": "#EF4444", "asset": "assets/promptball/part3/icons/field-dot-evaluation.svg" },
+    { "id": "style", "label": "Style", "cn": "风格语气", "color": "#22C55E", "asset": "assets/promptball/part3/icons/field-dot-style.svg" }
+  ],
+  "regions": [
+    {
+      "id": "page-title",
+      "label": "Part 3 标题",
+      "bounds": { "x": 20, "y": 24, "width": 360, "height": 54 },
+      "text": ["结构化 Prompt 构建器", "设计拆解与组件资产"]
+    },
+    {
+      "id": "full-card",
+      "label": "完整表单卡片（Full Card）",
+      "bounds": { "x": 34, "y": 132, "width": 565, "height": 550 },
+      "children": [
+        { "id": "full-card-title", "bounds": { "x": 58, "y": 153, "width": 135, "height": 24 } },
+        { "id": "template-select", "bounds": { "x": 306, "y": 146, "width": 160, "height": 32 }, "icon": "assets/promptball/part3/icons/control-chevron-down.svg" },
+        { "id": "save-template", "bounds": { "x": 496, "y": 146, "width": 80, "height": 32 }, "icon": "assets/promptball/part3/icons/action-save-template.svg" },
+        { "id": "field-list", "bounds": { "x": 58, "y": 194, "width": 520, "height": 408 } },
+        { "id": "footer-actions", "bounds": { "x": 56, "y": 630, "width": 520, "height": 34 } }
+      ]
+    },
+    {
+      "id": "title-area",
+      "label": "1. 标题区域",
+      "bounds": { "x": 626, "y": 95, "width": 455, "height": 56 },
+      "children": [
+        { "id": "title-text", "bounds": { "x": 642, "y": 118, "width": 120, "height": 22 } },
+        { "id": "template-select", "bounds": { "x": 812, "y": 108, "width": 151, "height": 32 }, "icon": "assets/promptball/part3/icons/control-chevron-down.svg" },
+        { "id": "save-template", "bounds": { "x": 990, "y": 108, "width": 78, "height": 32 }, "icon": "assets/promptball/part3/icons/action-save-template.svg" }
+      ]
+    },
+    {
+      "id": "field-row-anatomy",
+      "label": "2. 字段行（可复用表单项）",
+      "bounds": { "x": 626, "y": 201, "width": 455, "height": 95 },
+      "rowBounds": { "x": 626, "y": 201, "width": 455, "height": 52 },
+      "parts": [
+        { "id": "field-dot", "bounds": { "x": 640, "y": 224, "width": 10, "height": 10 } },
+        { "id": "field-name", "bounds": { "x": 662, "y": 218, "width": 60, "height": 22 } },
+        { "id": "field-input", "bounds": { "x": 753, "y": 213, "width": 318, "height": 32 } },
+        { "id": "character-count", "bounds": { "x": 1028, "y": 219, "width": 38, "height": 18 } }
+      ]
+    },
+    {
+      "id": "all-fields",
+      "label": "全部字段",
+      "bounds": { "x": 626, "y": 351, "width": 455, "height": 330 },
+      "rowHeight": 33,
+      "fields": [
+        { "id": "role", "value": "你是一位教育内容设计专家", "counter": "11/100" },
+        { "id": "context", "value": "面向初中生、解释人工智能的基本原理与应用", "counter": "18/200" },
+        { "id": "goal", "value": "生成一份结构清晰、易于理解的学习讲义", "counter": "16/200" },
+        { "id": "task", "value": "1. 包含定义、核心概念；2. 实际应用与生活例子；3. 简要总结", "counter": "32/400" },
+        { "id": "input", "value": "主题：人工智能的基本原理与应用；受众：初中生", "counter": "20/200" },
+        { "id": "output", "value": "结构化学习讲义（含小标题、列表和表格）", "counter": "16/200" },
+        { "id": "requirement", "value": "内容准确、简洁易懂、逻辑清晰、适合课堂使用", "counter": "18/200" },
+        { "id": "constraints", "value": "字数 200–1500 字，可使用列表、表格或图示", "counter": "20/200" },
+        { "id": "evaluation", "value": "准确性、清晰度、完整性、可读性", "counter": "14/200" },
+        { "id": "style", "value": "清晰友好、鼓励式表达、适合学习场景", "counter": "15/200" }
+      ]
+    },
+    {
+      "id": "color-legend",
+      "label": "3. 字段颜色图例",
+      "bounds": { "x": 1131, "y": 72, "width": 300, "height": 332 }
+    },
+    {
+      "id": "footer-actions",
+      "label": "4. 底部操作区",
+      "bounds": { "x": 1104, "y": 454, "width": 315, "height": 162 },
+      "states": [
+        {
+          "id": "default",
+          "bounds": { "x": 1104, "y": 454, "width": 315, "height": 49 }
+        },
+        {
+          "id": "hover",
+          "bounds": { "x": 1104, "y": 512, "width": 315, "height": 49 }
+        },
+        {
+          "id": "disabled",
+          "bounds": { "x": 1104, "y": 570, "width": 315, "height": 49 }
+        }
+      ],
+      "buttons": [
+        { "id": "add-field", "label": "添加字段", "icon": "assets/promptball/part3/icons/action-add-field.svg" },
+        { "id": "clear", "label": "清空", "icon": "assets/promptball/part3/icons/action-clear.svg" },
+        { "id": "apply", "label": "应用到编辑区", "variant": "primary" }
+      ]
+    },
+    {
+      "id": "button-styles",
+      "label": "5. 按钮样式",
+      "bounds": { "x": 626, "y": 714, "width": 752, "height": 129 },
+      "primaryBounds": { "x": 988, "y": 711, "width": 106, "height": 34 },
+      "secondaryAddBounds": { "x": 1138, "y": 711, "width": 95, "height": 34 },
+      "secondaryClearBounds": { "x": 1290, "y": 711, "width": 92, "height": 34 }
+    },
+    {
+      "id": "icons",
+      "label": "6. 图标",
+      "bounds": { "x": 39, "y": 881, "width": 252, "height": 108 },
+      "items": [
+        { "id": "add", "label": "添加", "size": "16x16", "asset": "assets/promptball/part3/icons/action-add-field.svg" },
+        { "id": "clear", "label": "清空", "size": "16x16", "asset": "assets/promptball/part3/icons/action-clear.svg" },
+        { "id": "dropdown", "label": "下拉", "size": "12x12", "asset": "assets/promptball/part3/icons/control-chevron-down.svg" },
+        { "id": "save-template", "label": "保存模板", "size": "16x16", "asset": "assets/promptball/part3/icons/action-save-template.svg" }
+      ]
+    },
+    {
+      "id": "input-states",
+      "label": "7. 输入框状态",
+      "bounds": { "x": 350, "y": 880, "width": 322, "height": 164 },
+      "states": [
+        { "id": "default", "bounds": { "x": 438, "y": 903, "width": 176, "height": 31 }, "border": "#E5E7EB" },
+        { "id": "focus", "bounds": { "x": 438, "y": 941, "width": 176, "height": 31 }, "border": "#2563EB", "asset": "assets/promptball/part3/icons/input-focus-ring.svg" },
+        { "id": "disabled", "bounds": { "x": 438, "y": 979, "width": 176, "height": 31 }, "border": "#E5E7EB" },
+        { "id": "error", "bounds": { "x": 438, "y": 1017, "width": 176, "height": 31 }, "border": "#EF4444", "asset": "assets/promptball/part3/icons/input-error-ring.svg" }
+      ]
+    },
+    {
+      "id": "card-spec",
+      "label": "8. 卡片样式规范",
+      "bounds": { "x": 724, "y": 878, "width": 654, "height": 168 },
+      "cardExampleBounds": { "x": 967, "y": 898, "width": 408, "height": 137 },
+      "padding": { "top": 24, "right": 24, "bottom": 24, "left": 24 },
+      "innerGap": 12
+    }
+  ],
+  "assets": [
+    "assets/promptball/part3/icons/field-dot-role.svg",
+    "assets/promptball/part3/icons/field-dot-context.svg",
+    "assets/promptball/part3/icons/field-dot-goal.svg",
+    "assets/promptball/part3/icons/field-dot-task.svg",
+    "assets/promptball/part3/icons/field-dot-input.svg",
+    "assets/promptball/part3/icons/field-dot-output.svg",
+    "assets/promptball/part3/icons/field-dot-requirement.svg",
+    "assets/promptball/part3/icons/field-dot-constraints.svg",
+    "assets/promptball/part3/icons/field-dot-evaluation.svg",
+    "assets/promptball/part3/icons/field-dot-style.svg",
+    "assets/promptball/part3/icons/action-add-field.svg",
+    "assets/promptball/part3/icons/action-clear.svg",
+    "assets/promptball/part3/icons/action-save-template.svg",
+    "assets/promptball/part3/icons/control-chevron-down.svg",
+    "assets/promptball/part3/icons/control-chevron-down-16.svg",
+    "assets/promptball/part3/icons/input-focus-ring.svg",
+    "assets/promptball/part3/icons/input-error-ring.svg"
+  ]
+}

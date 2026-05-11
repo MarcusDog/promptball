@@ -1,0 +1,195 @@
+{
+  "id": "promptball-part6-settings",
+  "name": "Part 6 - 设置模块",
+  "source": {
+    "image": "ui/part6.png",
+    "width": 1448,
+    "height": 1086
+  },
+  "tokens": {
+    "primary": "#2563EB",
+    "success": "#16A34A",
+    "neutral900": "#0F172A",
+    "neutral700": "#334155",
+    "neutral500": "#64748B",
+    "neutral400": "#94A3B8",
+    "neutral300": "#CBD5E1",
+    "neutral200": "#E2E8F0",
+    "neutral100": "#F1F5F9",
+    "background": "#F8FAFC",
+    "surface": "#FFFFFF",
+    "border": "#E5E7EB",
+    "danger": "#EF4444",
+    "radiusCard": 12,
+    "radiusControl": 8,
+    "radiusBadge": 999,
+    "cardShadow": "0 8px 24px rgba(15,23,42,0.06)",
+    "hoverShadow": "0 12px 32px rgba(15,23,42,0.10)"
+  },
+  "regions": [
+    {
+      "id": "page-title",
+      "label": "页面标题",
+      "bounds": { "x": 26, "y": 24, "width": 430, "height": 58 },
+      "text": ["Part 6 设置模块", "PromptBall 桌面端 · 设置模块 · 组件与样式资产"]
+    },
+    {
+      "id": "settings-container",
+      "label": "1. 设置容器（完整示例）",
+      "bounds": { "x": 25, "y": 92, "width": 755, "height": 350 },
+      "children": [
+        { "id": "settings-nav", "bounds": { "x": 48, "y": 137, "width": 154, "height": 292 } },
+        { "id": "service-list", "bounds": { "x": 224, "y": 137, "width": 222, "height": 292 } },
+        { "id": "right-form", "bounds": { "x": 466, "y": 166, "width": 292, "height": 255 } }
+      ]
+    },
+    {
+      "id": "settings-nav-states",
+      "label": "2. 左侧设置导航",
+      "bounds": { "x": 817, "y": 167, "width": 572, "height": 254 },
+      "states": [
+        { "id": "default", "bounds": { "x": 817, "y": 167, "width": 150, "height": 254 } },
+        { "id": "hover", "bounds": { "x": 1009, "y": 167, "width": 168, "height": 254 } },
+        { "id": "active", "bounds": { "x": 1230, "y": 167, "width": 160, "height": 254 } }
+      ],
+      "items": [
+        { "id": "general", "label": "通用设置", "icon": "assets/promptball/part6/icons/settings-general.svg" },
+        { "id": "model", "label": "模型与服务", "icon": "assets/promptball/part6/icons/settings-model.svg" },
+        { "id": "prompt", "label": "提示词偏好", "icon": "assets/promptball/part6/icons/settings-prompt.svg" },
+        { "id": "appearance", "label": "外观", "icon": "assets/promptball/part6/icons/settings-appearance.svg" },
+        { "id": "binding", "label": "绑定", "icon": "assets/promptball/part6/icons/settings-binding.svg" },
+        { "id": "privacy", "label": "数据与隐私", "icon": "assets/promptball/part6/icons/settings-privacy.svg" },
+        { "id": "team", "label": "团队与协作", "icon": "assets/promptball/part6/icons/settings-team.svg" },
+        { "id": "api", "label": "API / Playground", "icon": "assets/promptball/part6/icons/settings-api.svg" }
+      ]
+    },
+    {
+      "id": "service-list",
+      "label": "3. 模型与服务区域",
+      "bounds": { "x": 26, "y": 462, "width": 258, "height": 225 },
+      "providers": [
+        { "id": "deepseek", "label": "DeepSeek", "connected": true, "icon": "assets/promptball/part6/icons/provider-deepseek.svg" },
+        { "id": "openai", "label": "OpenAI", "connected": true, "icon": "assets/promptball/part6/icons/provider-openai.svg" },
+        { "id": "anthropic", "label": "Anthropic", "connected": false, "icon": "assets/promptball/part6/icons/provider-anthropic.svg" },
+        { "id": "volcano", "label": "火山引擎", "connected": false, "icon": "assets/promptball/part6/icons/provider-volcano.svg" },
+        { "id": "custom", "label": "自定义（OpenAI 兼容）", "connected": false, "icon": "assets/promptball/part6/icons/provider-custom.svg" },
+        { "id": "local", "label": "本地", "connected": false, "icon": "assets/promptball/part6/icons/provider-local.svg" }
+      ]
+    },
+    {
+      "id": "api-key-input",
+      "label": "4. API Key 输入组件",
+      "bounds": { "x": 299, "y": 462, "width": 369, "height": 225 },
+      "children": [
+        { "id": "api-key", "bounds": { "x": 321, "y": 522, "width": 318, "height": 36 } },
+        { "id": "default-model", "bounds": { "x": 321, "y": 591, "width": 143, "height": 36 } },
+        { "id": "default-org", "bounds": { "x": 484, "y": 591, "width": 143, "height": 36 } },
+        { "id": "backup-toggle", "bounds": { "x": 604, "y": 640, "width": 36, "height": 22 }, "asset": "assets/promptball/part6/controls/toggle-on.svg" }
+      ]
+    },
+    {
+      "id": "select",
+      "label": "5. 下拉选择器",
+      "bounds": { "x": 681, "y": 462, "width": 488, "height": 225 },
+      "states": [
+        { "id": "default", "bounds": { "x": 699, "y": 522, "width": 132, "height": 32 } },
+        { "id": "open", "bounds": { "x": 858, "y": 522, "width": 138, "height": 143 } },
+        { "id": "disabled", "bounds": { "x": 1020, "y": 522, "width": 132, "height": 32 } }
+      ]
+    },
+    {
+      "id": "toggle",
+      "label": "6. 开关",
+      "bounds": { "x": 1198, "y": 460, "width": 224, "height": 190 },
+      "states": [
+        { "id": "on", "asset": "assets/promptball/part6/controls/toggle-on.svg" },
+        { "id": "off", "asset": "assets/promptball/part6/controls/toggle-off.svg" },
+        { "id": "disabled", "asset": "assets/promptball/part6/controls/toggle-disabled.svg" }
+      ]
+    },
+    {
+      "id": "badge",
+      "label": "7. 状态徽章",
+      "bounds": { "x": 26, "y": 701, "width": 164, "height": 174 },
+      "items": ["已连接", "未连接", "已启用", "默认模型"]
+    },
+    {
+      "id": "input-states",
+      "label": "8. 输入框 / 表单项状态",
+      "bounds": { "x": 199, "y": 700, "width": 469, "height": 176 },
+      "states": ["default", "focus", "error", "disabled"]
+    },
+    {
+      "id": "form-card-example",
+      "label": "9. 右侧配置表单卡片",
+      "bounds": { "x": 681, "y": 700, "width": 436, "height": 176 },
+      "children": ["api-key", "default-org", "default-model", "backup-toggle"]
+    },
+    {
+      "id": "icon-library",
+      "label": "10. 图标库",
+      "bounds": { "x": 1129, "y": 648, "width": 292, "height": 226 },
+      "items": [
+        "assets/promptball/part6/icons/settings-general.svg",
+        "assets/promptball/part6/icons/settings-model.svg",
+        "assets/promptball/part6/icons/settings-prompt.svg",
+        "assets/promptball/part6/icons/settings-appearance.svg",
+        "assets/promptball/part6/icons/settings-binding.svg",
+        "assets/promptball/part6/icons/settings-privacy.svg",
+        "assets/promptball/part6/icons/settings-team.svg",
+        "assets/promptball/part6/icons/settings-api.svg",
+        "assets/promptball/part6/icons/control-reset.svg",
+        "assets/promptball/part6/icons/control-copy.svg",
+        "assets/promptball/part6/icons/control-show.svg",
+        "assets/promptball/part6/icons/control-hide.svg",
+        "assets/promptball/part3/icons/control-chevron-down.svg",
+        "assets/promptball/part3/icons/control-chevron-down-16.svg",
+        "assets/promptball/part6/icons/control-check.svg",
+        "assets/promptball/part6/icons/control-close.svg"
+      ]
+    },
+    {
+      "id": "colors-specs",
+      "label": "11. 颜色与规格说明",
+      "bounds": { "x": 25, "y": 890, "width": 1398, "height": 158 },
+      "colors": [
+        { "label": "Primary Blue", "value": "#2563EB" },
+        { "label": "Success Green", "value": "#16A34A" },
+        { "label": "Neutral 900", "value": "#0F172A" },
+        { "label": "Neutral 700", "value": "#334155" },
+        { "label": "Neutral 500", "value": "#64748B" },
+        { "label": "Neutral 400", "value": "#94A3B8" },
+        { "label": "Neutral 300", "value": "#CBD5E1" },
+        { "label": "Neutral 200", "value": "#E2E8F0" },
+        { "label": "Neutral 100", "value": "#F1F5F9" },
+        { "label": "Background", "value": "#F8FAFC" },
+        { "label": "Surface", "value": "#FFFFFF" }
+      ]
+    }
+  ],
+  "assets": [
+    "assets/promptball/part6/icons/settings-general.svg",
+    "assets/promptball/part6/icons/settings-model.svg",
+    "assets/promptball/part6/icons/settings-prompt.svg",
+    "assets/promptball/part6/icons/settings-appearance.svg",
+    "assets/promptball/part6/icons/settings-binding.svg",
+    "assets/promptball/part6/icons/settings-privacy.svg",
+    "assets/promptball/part6/icons/settings-team.svg",
+    "assets/promptball/part6/icons/settings-api.svg",
+    "assets/promptball/part6/icons/provider-deepseek.svg",
+    "assets/promptball/part6/icons/provider-openai.svg",
+    "assets/promptball/part6/icons/provider-anthropic.svg",
+    "assets/promptball/part6/icons/provider-volcano.svg",
+    "assets/promptball/part6/icons/provider-custom.svg",
+    "assets/promptball/part6/icons/provider-local.svg",
+    "assets/promptball/part6/icons/control-reset.svg",
+    "assets/promptball/part6/icons/control-copy.svg",
+    "assets/promptball/part6/icons/control-show.svg",
+    "assets/promptball/part6/icons/control-hide.svg",
+    "assets/promptball/part6/icons/control-check.svg",
+    "assets/promptball/part6/icons/control-close.svg",
+    "assets/promptball/part6/controls/toggle-on.svg",
+    "assets/promptball/part6/controls/toggle-off.svg",
+    "assets/promptball/part6/controls/toggle-disabled.svg"
+  ]
+}

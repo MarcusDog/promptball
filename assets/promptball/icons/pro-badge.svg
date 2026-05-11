@@ -1,0 +1,5 @@
+<svg width="64" height="32" viewBox="0 0 64 32" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Pro badge">
+  <rect x="1" y="1" width="62" height="30" rx="15" fill="white"/>
+  <rect x="1" y="1" width="62" height="30" rx="15" stroke="#E5E7EB"/>
+  <text x="32" y="21" text-anchor="middle" font-family="Inter, PingFang SC, sans-serif" font-size="16" font-weight="700" fill="#111827">Pro</text>
+</svg>

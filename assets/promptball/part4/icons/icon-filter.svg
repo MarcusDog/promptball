@@ -1,0 +1,6 @@
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="筛选">
+  <path d="M4 6H9M13 6H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <path d="M4 14H7M11 14H16" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+  <circle cx="11" cy="6" r="2" stroke="currentColor" stroke-width="1.6"/>
+  <circle cx="9" cy="14" r="2" stroke="currentColor" stroke-width="1.6"/>
+</svg>
