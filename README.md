@@ -263,3 +263,13 @@ npm run check
 Made with ❤️ using Tauri · React · Rust
 
 </div>
+
+<!-- ai-positioning:start -->
+## AI / Agent / 大模型定位
+
+- **AI 应用**：面向重度 AI 用户的本地优先桌面应用，提供 Prompt 编写、诊断、优化、模板、版本和 A/B 测试。
+- **Agent**：优化 Agent 按任务类型识别问题、补齐上下文并生成可比较版本，用户始终保留最终确认权。
+- **大模型（LLM）**：通过 OpenAI-compatible 接口兼容 DeepSeek、OpenAI 与 Ollama；密钥与历史数据默认本地保存。
+
+> 本节用于说明项目与 AI 的真实关系：已实现能力按现状描述，规划能力明确标注为“后续/尚未实现”。
+<!-- ai-positioning:end -->
